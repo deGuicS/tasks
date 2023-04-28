@@ -31,8 +31,8 @@ mais = (input('Deseja algo a mais? (sim ou não): '))
 
 if mais == 'sim':
     code = int(input('Diga o código do produto que deseja: '))
-    qtd2 = int(input('Diga a quantidade que deseja: '))
-    pague2 = pague + (pre[code] * qtd2)
+    qtd = int(input('Diga a quantidade que deseja: '))
+    pague2 = pague + (pre[code] * qtd)
     print(f'O valor que deve pagar é R${pague2}')
 else:
     print(f'O valor que deve pagar é R${pague}')
