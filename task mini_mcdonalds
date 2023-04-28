@@ -1,5 +1,5 @@
 """
-Escreva um programa que leia o código do produto escolhido do cardápio de uma lanchonete e a quantidade. o programa deve calcular o valor a ser pago por aquele lanche.
+32) Escreva um programa que leia o código do produto escolhido do cardápio de uma lanchonete e a quantidade. o programa deve calcular o valor a ser pago por aquele lanche.
 Considere que a cada execução somente será calculado um pedido. 
 
 Cardápio:
