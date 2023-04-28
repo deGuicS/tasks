@@ -1,0 +1,38 @@
+print('        Cardápio \n'
+      'Lanche           | COD | Preço       \n'
+      'Cachorro Quente: | 100 | Valor: 1.20 \n'
+      'Bauru Simples:   | 101 | Valor: 1.30 \n'
+      'Bauru com Ovo:   | 102 | Valor: 1.50 \n'
+      'Hamburguer:      | 103 | Valor: 1.20 \n'
+      'Cheeseburguer:   | 104 | Valor: 1.70 \n'
+      'Suco:            | 105 | Valor: 2.20 \n'
+      'Refrigerante:    | 106 | Valor: 1.20 \n')
+
+pre = {100: 1.20,
+       101: 1.30,
+       102: 1.50,
+       103: 1.20,
+       104: 1.70,
+       105: 2.20,
+       106: 1.20}
+
+code = int(input('Diga o código do produto que deseja: '))
+
+while code < 100 or code > 106 :
+    code2 = int(input('Código errado! Digite novamente: '))
+    if code2 >= 100 or code2 <= 106:
+        break
+
+qtd = int(input('Diga a quantidade que deseja: '))
+
+pague = pre[code] * qtd
+
+mais = (input('Deseja algo a mais? (sim ou não): '))
+
+if mais == 'sim':
+    code = int(input('Diga o código do produto que deseja: '))
+    qtd2 = int(input('Diga a quantidade que deseja: '))
+    pague2 = pague + (pre[code] * qtd2)
+    print(f'O valor que deve pagar é R${pague2}')
+else:
+    print(f'O valor que deve pagar é R${pague}')
