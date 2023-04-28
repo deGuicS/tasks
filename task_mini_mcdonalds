@@ -34,8 +34,8 @@ pre = {100: 1.20,
 code = int(input('Diga o código do produto que deseja: '))
 
 while code < 100 or code > 106 :
-    code2 = int(input('Código errado! Digite novamente: '))
-    if code2 >= 100 or code2 <= 106:
+    code = int(input('Código errado! Digite novamente: '))
+    if code >= 100 or code <= 106:
         break
 
 qtd = int(input('Diga a quantidade que deseja: '))
