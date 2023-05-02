@@ -1,0 +1,9 @@
+"""
+17) Leia um número inteiro positivo e some os primeiros naturais
+"""
+soma = 0
+num = int(input('Digite um número inteiro positivo '))
+if num > 0:
+    for n in range(num - 1):
+        soma = soma + n   # Não entendo como fazer a soma dos números, sei que o problema está aqui.
+        print(f'{soma}')   
