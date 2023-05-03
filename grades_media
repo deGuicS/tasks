@@ -1,0 +1,23 @@
+"""
+22) Escreva um programa completo que permita a qualquer aluno introduzir, pelo teclado, uma sequêmcia arbitrária
+de notas (válidas no intervalo de 10 a 20) e que mostre na tela, como resultado, a correspondente média aritmética.
+O número de notas com que o aluno pretenda efetuar o cálculo não será fornecido ao programa, o qual terminará
+quando for introduzido um valor que não seja válido como nopta de aprovação.
+"""
+
+grades = []
+mais = 'sim'
+print('Diga as notas que dejesa saber a média, lembrando que devem ser entre 10 e 20')
+
+while mais == 'sim':
+    grade = float(input('Digite aqui sua nota: '))
+    mais = input('Deseja digitar mais alguma nota ? Responda com "sim" ou "não": ')
+    if grade < 10 or grade > 20:
+        break
+    else:
+        grades.append(grade)
+
+soma = sum(grades)
+qtd = len(grades)
+media = soma / qtd
+print(f'A média aritmética de suas notas é {media}')
