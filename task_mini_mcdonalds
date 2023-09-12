@@ -33,7 +33,7 @@ pre = {100: 1.20,
 
 code = int(input('Diga o código do produto que deseja: '))
 
-while code < 100 or code > 106 :
+while code in pre :
     code = int(input('Código errado! Digite novamente: '))
     if code >= 100 or code <= 106:
         break
